@@ -66,3 +66,16 @@ with st.container():
 
     with text_column:
         st.write("Insertar guia de instalacion prrona")
+
+
+with st.container():
+    st.write("---")
+    st.write("##")
+    st.header("Guia de instalación:")
+    img_column, text_column = st.columns((1,2))
+    with img_column:
+        st.write("Insertar Imagen")
+
+    with text_column:
+        st.write("Insertar guia de instalacion prrona")
+
