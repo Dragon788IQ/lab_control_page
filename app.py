@@ -21,13 +21,16 @@ def local_css(file_name):
 #Assets
 correo_animation_url = "https://assets10.lottiefiles.com/packages/lf20_4Ox5W3dL45.json"
 laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.json"
+imagen_1 = Image.open("imagenes/recorte 1.PNG")
+
+local_css("Estilos/estilos.css")
 
 #Json
 laptop_animation_json = load_lottie(laptop_animation_url)
 
 with st.container():
-    st.subheader("Laboratorio de Control Automatico de Procesos")
-    st.title("Programa de reconocimiento automatico de paneles")
+    st.subheader("Laboratorio de Control Automático de Procesos")
+    st.title("Programa de reconocimiento automático de paneles")
     st.write(
         "Este programa esta diseñado para apoyar a los alumnos y docentes en el registro de informacion procedente de paneles, Esto con ayuda de reconociemiento en tiempo real, graficacion de la informacion y posterior registro en un documento de excel."
     )
@@ -42,12 +45,13 @@ with st.container():
         #st.write("#")
         st.write(
             """
-            - Equipo de computo con sistema operativo Windows. \n
-            - Minimo 4Gb de memoria RAM. \n
-            - X espacio de almacenamiento en el disco duro. \n
+            Equipo de cómputo con sistema operativo Windows 64bits. \n
+            - Mínimo 4Gb de memoria RAM. \n
+            - 1.4Gb de espacio de almacenamiento en el disco duro. \n
             - Webcam (En caso de no contar con una solicitar una prestada en el laboratorio) \n
-            - Tener instalado MS Office Excel ó Libre Office para poder abrir el documento de registro generado\n
-                [Link de descarga de libre Office >](https://es.libreoffice.org/)
+            - Tener instalado MS Office Excel o Libreoffice para poder abrir el documento de registro generado\n
+
+            [Link de descarga de libre Office >](https://es.libreoffice.org/)
 
             """
         )
@@ -71,11 +75,17 @@ with st.container():
 with st.container():
     st.write("---")
     st.write("##")
-    st.header("Guia de instalación:")
+    st.header("Guia de uso:")
     img_column, text_column = st.columns((1,2))
     with img_column:
-        st.write("Insertar Imagen")
-
+        st.image(imagen_1)
     with text_column:
-        st.write("Insertar guia de instalacion prrona")
+        st.write(
+            """
+            Una vez instalado el programa de reconocimiento y conectada la webcam al equipo, se procede a abrir el programa, el cual mostrará el video captado de la webcam.
+
+            Como primer paso será cuadrar la imagen con el panel el cual se querrá utilizar para hacer la lectura del mismo, se recomienda que se coloque la cámara mirando de forma directa a  la webcam con la distancia suficiente para un correcto enfoque, además de mantener un iluminación óptima para que se visualicen los dígitos de la forma mas clara posible.
+
+            """
+        )
 
