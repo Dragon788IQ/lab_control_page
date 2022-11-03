@@ -22,6 +22,7 @@ def local_css(file_name):
 correo_animation_url = "https://assets10.lottiefiles.com/packages/lf20_4Ox5W3dL45.json"
 laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.json"
 imagen_1 = Image.open("imagenes/recorte 1.PNG")
+imagen_2 = Image.open("imagenes/recorte 2.PNG")
 
 local_css("Estilos/estilos.css")
 
@@ -89,3 +90,13 @@ with st.container():
             """
         )
 
+with st.container():
+    img_column, text_column = st.columns((1,2))
+    with img_column:
+        st.image(imagen_2)
+    with text_column:
+        st.write(
+            """
+            Una vez enfocado el panel a leer se selecciona con el raton el area especifica que se quiere leer, esta se marcara con una recuadro de color verde, como se muestra en la imagen de referencia.
+            """
+        )
