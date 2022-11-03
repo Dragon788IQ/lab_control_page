@@ -23,6 +23,7 @@ correo_animation_url = "https://assets10.lottiefiles.com/packages/lf20_4Ox5W3dL4
 laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.json"
 imagen_1 = Image.open("imagenes/recorte 1.PNG")
 imagen_2 = Image.open("imagenes/recorte 2.PNG")
+imagen_5 = Image.open("imagenes/recorte 5.PNG")
 
 local_css("Estilos/estilos.css")
 
@@ -94,9 +95,12 @@ with st.container():
     img_column, text_column = st.columns((1,2))
     with img_column:
         st.image(imagen_2)
+        st.image(imagen_5)
     with text_column:
         st.write(
             """
             Una vez enfocado el panel a leer se selecciona con el raton el area especifica que se quiere leer, esta se marcara con una recuadro de color verde, como se muestra en la imagen de referencia.
+
+            Ya seleccionada el área presionamos la tecla “Q” para pasar el modo de la lectura donde se aplicara un par de filtro  negativo ademas de otro en  blanco y negro para optimizar la lectura.
             """
         )
