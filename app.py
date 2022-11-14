@@ -81,7 +81,7 @@ with st.container():
     st.header("Guia de uso:")
     img_column, text_column = st.columns((1,2))
     with img_column:
-        st.image(imagen_1)
+        st.image(imagen_1, width=300)
     with text_column:
         st.write(
             """
@@ -94,8 +94,8 @@ with st.container():
 with st.container():
     img_column, text_column = st.columns((1,2))
     with img_column:
-        st.image(imagen_2)
-        st.image(imagen_5)
+        st.image(imagen_2, width=300)
+        st.image(imagen_5, width=300)
     with text_column:
         st.write(
             """
