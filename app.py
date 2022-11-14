@@ -24,6 +24,7 @@ laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.j
 imagen_1 = Image.open("imagenes/recorte 1.PNG")
 imagen_2 = Image.open("imagenes/recorte 2.PNG")
 imagen_5 = Image.open("imagenes/recorte 5.PNG")
+instrucciones_img = Image.open("imagenes/instrucciones.png")
 
 local_css("Estilos/estilos.css")
 
@@ -104,3 +105,20 @@ with st.container():
             Ya seleccionada el área presionamos la tecla “Q” para pasar el modo de la lectura donde se aplicara un par de filtro  negativo ademas de otro en  blanco y negro para optimizar la lectura.
             """
         )
+
+
+with st.container():
+    st.write("---")
+    st.write("##")
+    st.write(
+        """
+        *Nota:* Al ejecutar el programa mostrara una ventana con un version resumida de las instrucciones en dado caso de que sea necesario repasar los controles de uso.
+        """
+    )
+    comlumn_1, comlumn_2, comlumn_3 = st.columns(3)
+    with comlumn_1:
+        st.empty()
+    with comlumn_2:
+        st.image(instrucciones_img)
+    with comlumn_3:
+        st.empty()
