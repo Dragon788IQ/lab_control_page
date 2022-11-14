@@ -1,3 +1,8 @@
 img{
     max-height: 300px;
+    align-items: center;
+}
+
+body{
+    text-align: justify;
 }

@@ -101,11 +101,11 @@ with st.container():
             """
             Después de que quedo enfocado el panel a leer se selecciona con el raton el area especifica que se quiere leer, esta se marcara con una recuadro de color verde, como se muestra en la imagen de referencia.
 
-            Ya seleccionada el área presionamos la tecla “Q” para pasar el modo de la lectura donde se aplicara un par de filtro  negativo ademas de otro en  blanco y negro para optimizar la lectura.
+            Ya seleccionada el área presionamos la  **Tecla “Q”** para pasar el modo de la lectura donde se aplicara un par de filtro  negativo ademas de otro en  blanco y negro para optimizar la lectura.
 
             Cuando se despliegue una ventana con los filtros que se pueden observar como en la imagen de la izquierda, estaremos listos para continuar.
 
-            Estando en este modo podemos hacer los últimos ajustes a la posición de la cámara y a la iluminación requerida para que nuestra lecturas sean lo mas correctas posibles, las lecturas no comenzaron de forma automática hasta que se presione un par de veces la Tecla “C” al momento de realizar esta acción se desplegará una alerta de windows que nos avisara que la toma de lecturas comenzará.
+            Estando en este modo podemos hacer los últimos ajustes a la posición de la cámara y a la iluminación requerida para que nuestra lecturas sean lo mas correctas posibles, las lecturas no comenzaron de forma automática hasta que se presione un par de veces la **Tecla “C”** al momento de realizar esta acción se desplegará una alerta de windows que nos avisara que la toma de lecturas comenzará.
 
             La forma en la que trabaja las lecturas será cada que se cumpla un ciclo de 5 segundos aproximadamente esto tomando en cuenta que si llegara a cambiar la posición de la cámara por algún motivo este intervalo permite reacomodar la posición sin perder información del experimento.
 
