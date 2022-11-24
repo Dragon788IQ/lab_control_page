@@ -24,6 +24,7 @@ laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.j
 imagen_1 = Image.open("imagenes/recorte 1.PNG")
 imagen_2 = Image.open("imagenes/recorte 2.PNG")
 imagen_5 = Image.open("imagenes/recorte 5.PNG")
+grafica_img = Image.open("imagenes/Grafica.png")
 instrucciones_img = Image.open("imagenes/instrucciones.png")
 
 local_css("Estilos/estilos.css")
@@ -81,30 +82,53 @@ with st.container():
     st.header("Guia de uso:")
     img_column, text_column = st.columns((1,2))
     with img_column:
-        st.image(imagen_1)
+        st.image(imagen_1, width=300)
     with text_column:
         st.write(
             """
             Una vez instalado el programa de reconocimiento y conectada la webcam al equipo, se procede a abrir el programa, el cual mostrará el video captado de la webcam.
 
             Como primer paso será cuadrar la imagen con el panel el cual se querrá utilizar para hacer la lectura del mismo, se recomienda que se coloque la cámara mirando de forma directa a  la webcam con la distancia suficiente para un correcto enfoque, además de mantener un iluminación óptima para que se visualicen los dígitos de la forma mas clara posible.
-
             """
         )
 
 with st.container():
     img_column, text_column = st.columns((1,2))
     with img_column:
-        st.image(imagen_2)
-        st.image(imagen_5)
+        st.image(imagen_2, width=300)
+        st.image(imagen_5, width=300)
+
     with text_column:
         st.write(
             """
-            Una vez enfocado el panel a leer se selecciona con el raton el area especifica que se quiere leer, esta se marcara con una recuadro de color verde, como se muestra en la imagen de referencia.
+            Después de que quedo enfocado el panel a leer se selecciona con el raton el area especifica que se quiere leer, esta se marcara con una recuadro de color verde, como se muestra en la imagen de referencia.
 
-            Ya seleccionada el área presionamos la tecla “Q” para pasar el modo de la lectura donde se aplicara un par de filtro  negativo ademas de otro en  blanco y negro para optimizar la lectura.
+            Ya seleccionada el área presionamos la  **Tecla “Q”** para pasar el modo de la lectura donde se aplicara un par de filtro  negativo ademas de otro en  blanco y negro para optimizar la lectura.
+
+            Cuando se despliegue una ventana con los filtros que se pueden observar como en la imagen de la izquierda, estaremos listos para continuar.
+
+            Estando en este modo podemos hacer los últimos ajustes a la posición de la cámara y a la iluminación requerida para que nuestra lecturas sean lo mas correctas posibles, las lecturas no comenzaron de forma automática hasta que se presione un par de veces la **Tecla “C”** al momento de realizar esta acción se desplegará una alerta de windows que nos avisara que la toma de lecturas comenzará.
+
+            La forma en la que trabaja las lecturas será cada que se cumpla un ciclo de 5 segundos aproximadamente esto tomando en cuenta que si llegara a cambiar la posición de la cámara por algún motivo este intervalo permite reacomodar la posición sin perder información del experimento.
             """
         )
+
+with st.container():
+    img_column, text_column = st.columns((1,2))
+    with img_column:
+        st.image(grafica_img, width=300)
+
+    with text_column:
+        st.write(
+            """
+            Las gráficas  plestánanteadas para tener en el eje vertical las medidas de la temperatura medida mientras que el eje horizontal estará el tiempo que se calculará automáticamente conforme avance el experimento.
+
+            En la imagen de ejemplo se pueden observar unos puntos que se miden en temperaturas muy inferiores a las de la tendencia, esto se puede dar si hay un error en la medición y si la cámara no registra ningún dato por que se desplazó del punto de lectura este se marcará automáticamente como un cero.
+            """
+        )
+
+
+
 
 
 with st.container():
@@ -112,13 +136,13 @@ with st.container():
     st.write("##")
     st.write(
         """
-        *Nota:* Al ejecutar el programa mostrara una ventana con un version resumida de las instrucciones en dado caso de que sea necesario repasar los controles de uso.
+        ****Nota:**** Al ejecutar el programa mostrara una ventana con un version resumida de las instrucciones en dado caso de que sea necesario repasar los controles de uso.
         """
     )
     comlumn_1, comlumn_2, comlumn_3 = st.columns(3)
     with comlumn_1:
         st.empty()
     with comlumn_2:
-        st.image(instrucciones_img)
+        st.image(instrucciones_img, width=300)
     with comlumn_3:
         st.empty()
