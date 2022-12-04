@@ -26,6 +26,10 @@ imagen_2 = Image.open("imagenes/recorte 2.PNG")
 imagen_5 = Image.open("imagenes/recorte 5.PNG")
 grafica_img = Image.open("imagenes/Grafica.png")
 instrucciones_img = Image.open("imagenes/instrucciones.png")
+#Imagenes de la guia de instalcion
+descarga_img = Image.open("imagenes/descarga.PNG")
+componentev2 = Image.open("imagenes/componente_v2.PNG")
+archivo_exe = Image.open("imagenes/erchivo_exe.PNG")
 
 local_css("Estilos/estilos.css")
 
@@ -51,11 +55,15 @@ with st.container():
             """
             Equipo de cómputo con sistema operativo Windows 64bits. \n
             - Mínimo 4Gb de memoria RAM. \n
+            - Un programa para descomprimir archivos (ej. Winrar, 7zip)\n
             - 1.4Gb de espacio de almacenamiento en el disco duro. \n
             - Webcam (En caso de no contar con una solicitar una prestada en el laboratorio) \n
             - Tener instalado MS Office Excel o Libreoffice para poder abrir el documento de registro generado\n
 
-            [Link de descarga de libre Office >](https://es.libreoffice.org/)
+            [> Link de descarga de libre Office](https://es.libreoffice.org/)\n
+            [> Link de descarga de 7zip](https://www.7-zip.org/download.html)\n
+            [> Link de descarga de Winrar](https://www.winrar.es/descargas)\n
+
 
             """
         )
@@ -64,18 +72,70 @@ with st.container():
         st.write("\n")
         st_lottie(laptop_animation_json, height=400, key="coding")
 
+#----------------------Sección de instlación -------------------------------------------
+
 with st.container():
     st.write("---")
     st.write("##")
     st.header("Guia de instalación:")
-    img_column, text_column = st.columns((1,2))
-    with img_column:
-        st.write("Insertar Imagen")
+    st.write(
+        """
+        link de drive [Descarga](https://drive.google.com/file/d/1oCZ2-IOUoSqrUgh6lm36Q9UR4sXTSR4Z/view?usp=share_link), Una vez ingresado en el link se tiene que dar click en el botón de descarga como el que se marca en la imagen de referencia de abajo.\n
 
-    with text_column:
-        st.write("Insertar guia de instalacion prrona")
+        [> Link de Descarga programa de reconocimiento](https://drive.google.com/file/d/1oCZ2-IOUoSqrUgh6lm36Q9UR4sXTSR4Z/view?usp=share_link)
+        """)
+    
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.empty()
 
+        with col2:
+            st.image(descarga_img)
 
+        with col3:
+            st.empty()
+
+    st.write(
+        """
+        Una vez presionado el botón se deberá comenzar la descarga automática del documento con extensión “.rar”.
+        """)
+
+    st.write(
+        """
+        Ya que el documento .rar se haya descargado por completo se procede a descomprimirlo con el programa de descompresión que se tenga a la mano.
+        """)
+    
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.empty()
+
+        with col2:
+            st.image(componentev2)
+
+        with col3:
+            st.empty()
+
+    st.write(
+        """
+        Cuando se descomprima el documento dejara una carpeta llamada “Componente_v2”, la cual al abrirla nos permitirá ver todos los archivos que componen el programa de reconocimiento, de los cuales el que nos permitirá ejecutar el programa sera el archivo llamado “Componente_v2.exe” el cual tiene por icono un pingüino para una referencia más clara.
+        """)
+    
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.empty()
+
+        with col2:
+            st.image(archivo_exe)
+
+        with col3:
+            st.empty()
+
+#st.image(descarga_img)
+
+#----------------------Sección de la guia de uso -------------------------------------------
 with st.container():
     st.write("---")
     st.write("##")
@@ -91,6 +151,7 @@ with st.container():
             Como primer paso será cuadrar la imagen con el panel el cual se querrá utilizar para hacer la lectura del mismo, se recomienda que se coloque la cámara mirando de forma directa a  la webcam con la distancia suficiente para un correcto enfoque, además de mantener un iluminación óptima para que se visualicen los dígitos de la forma mas clara posible.
             """
         )
+
 
 with st.container():
     img_column, text_column = st.columns((1,2))
