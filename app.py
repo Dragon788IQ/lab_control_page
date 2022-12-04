@@ -21,9 +21,9 @@ def local_css(file_name):
 #Assets
 correo_animation_url = "https://assets10.lottiefiles.com/packages/lf20_4Ox5W3dL45.json"
 laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.json"
-imagen_1 = Image.open("./imagenes/recorte_1.png")
-imagen_2 = Image.open("./imagenes/recorte_2.png")
-imagen_5 = Image.open("./imagenes/recorte_5.png")
+imagen_1 = Image.open("/imagenes/recorte_1.png")
+imagen_2 = Image.open("/imagenes/recorte_2.png")
+imagen_5 = Image.open("/imagenes/recorte_5.png")
 grafica_img = Image.open("imagenes/Grafica.png")
 instrucciones_img = Image.open("imagenes/instrucciones.png")
 #Imagenes de la guia de instalcion
