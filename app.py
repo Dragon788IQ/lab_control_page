@@ -60,7 +60,10 @@ with st.container():
             - Webcam (En caso de no contar con una solicitar una prestada en el laboratorio) \n
             - Tener instalado MS Office Excel o Libreoffice para poder abrir el documento de registro generado\n
 
-            [Link de descarga de libre Office >](https://es.libreoffice.org/)
+            [> Link de descarga de libre Office](https://es.libreoffice.org/)\n
+            [> Link de descarga de 7zip](https://www.7-zip.org/download.html)\n
+            [> Link de descarga de Winrar](https://www.winrar.es/descargas)\n
+
 
             """
         )
