@@ -26,6 +26,8 @@ imagen_2 = Image.open("imagenes/recorte 2.PNG")
 imagen_5 = Image.open("imagenes/recorte 5.PNG")
 grafica_img = Image.open("imagenes/Grafica.png")
 instrucciones_img = Image.open("imagenes/instrucciones.png")
+descarga_img = Image.open("imagenes/descarga.PNG")
+
 
 local_css("Estilos/estilos.css")
 
@@ -64,18 +66,21 @@ with st.container():
         st.write("\n")
         st_lottie(laptop_animation_json, height=400, key="coding")
 
+#----------------------Sección de instlación -------------------------------------------
+
 with st.container():
     st.write("---")
     st.write("##")
     st.header("Guia de instalación:")
-    img_column, text_column = st.columns((1,2))
-    with img_column:
-        st.write("Insertar Imagen")
+    st.write(
+        """
+        OIJDOASJDOAISJDOAISJDOAISJDOIASJDOIASJDOIASJOIDASJOIDASOIDJAOISJD
+        """
+    )
 
-    with text_column:
-        st.write("Insertar guia de instalacion prrona")
+#st.image(descarga_img)
 
-
+#----------------------Sección de la guia de uso -------------------------------------------
 with st.container():
     st.write("---")
     st.write("##")
@@ -91,6 +96,7 @@ with st.container():
             Como primer paso será cuadrar la imagen con el panel el cual se querrá utilizar para hacer la lectura del mismo, se recomienda que se coloque la cámara mirando de forma directa a  la webcam con la distancia suficiente para un correcto enfoque, además de mantener un iluminación óptima para que se visualicen los dígitos de la forma mas clara posible.
             """
         )
+
 
 with st.container():
     img_column, text_column = st.columns((1,2))
