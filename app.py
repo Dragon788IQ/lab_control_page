@@ -53,6 +53,7 @@ with st.container():
             """
             Equipo de cómputo con sistema operativo Windows 64bits. \n
             - Mínimo 4Gb de memoria RAM. \n
+            - Un programa para descomprimir archivos (ej. Winrar, 7zip)\n
             - 1.4Gb de espacio de almacenamiento en el disco duro. \n
             - Webcam (En caso de no contar con una solicitar una prestada en el laboratorio) \n
             - Tener instalado MS Office Excel o Libreoffice para poder abrir el documento de registro generado\n
@@ -74,9 +75,20 @@ with st.container():
     st.header("Guia de instalación:")
     st.write(
         """
-        OIJDOASJDOAISJDOAISJDOAISJDOIASJDOIASJDOIASJOIDASJOIDASOIDJAOISJD
+        link de drive [LINK AQUI], Una vez ingresado en el link se tiene que dar click en el botón de descarga como el que se marca en la imagen de referencia de abajo.
+        """)
+    st.write(
         """
-    )
+        Una vez presionado el botón se deberá comenzar la descarga automática del documento con extensión “.rar”.
+        """)
+    st.write(
+        """
+        Ya que el documento .rar se haya descargado por completo se procede a descomprimirlo con el programa de descompresión que se tenga a la mano.
+        """)
+    st.write(
+        """
+        Cuando se descomprima el documento dejara una carpeta llamada “Componente_v2”, la cual al abrirla nos permitirá ver todos los archivos que componen el programa de reconocimiento, de los cuales el que nos permitirá ejecutar el programa sera el archivo llamado “Componente_v2.exe” el cual tiene por icono un pingüino para una referencia más clara.
+        """)
 
 #st.image(descarga_img)
 
