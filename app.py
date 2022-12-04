@@ -80,7 +80,9 @@ with st.container():
     st.header("Guia de instalación:")
     st.write(
         """
-        link de drive [LINK AQUI], Una vez ingresado en el link se tiene que dar click en el botón de descarga como el que se marca en la imagen de referencia de abajo.
+        link de drive [Descarga](https://drive.google.com/file/d/1oCZ2-IOUoSqrUgh6lm36Q9UR4sXTSR4Z/view?usp=share_link), Una vez ingresado en el link se tiene que dar click en el botón de descarga como el que se marca en la imagen de referencia de abajo.\n
+
+        [> Link de Descarga programa de reconocimiento](https://drive.google.com/file/d/1oCZ2-IOUoSqrUgh6lm36Q9UR4sXTSR4Z/view?usp=share_link)
         """)
     
     with st.container():
