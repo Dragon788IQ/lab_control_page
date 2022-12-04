@@ -26,8 +26,10 @@ imagen_2 = Image.open("imagenes/recorte 2.PNG")
 imagen_5 = Image.open("imagenes/recorte 5.PNG")
 grafica_img = Image.open("imagenes/Grafica.png")
 instrucciones_img = Image.open("imagenes/instrucciones.png")
+#Imagenes de la guia de instalcion
 descarga_img = Image.open("imagenes/descarga.PNG")
-
+componentev2 = Image.open("imagenes/componente_v2.PNG")
+archivo_exe = Image.open("imagenes/erchivo_exe.PNG")
 
 local_css("Estilos/estilos.css")
 
@@ -77,18 +79,54 @@ with st.container():
         """
         link de drive [LINK AQUI], Una vez ingresado en el link se tiene que dar click en el botón de descarga como el que se marca en la imagen de referencia de abajo.
         """)
+    
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.empty()
+
+        with col2:
+            st.image(descarga_img)
+
+        with col3:
+            st.empty()
+
     st.write(
         """
         Una vez presionado el botón se deberá comenzar la descarga automática del documento con extensión “.rar”.
         """)
+
     st.write(
         """
         Ya que el documento .rar se haya descargado por completo se procede a descomprimirlo con el programa de descompresión que se tenga a la mano.
         """)
+    
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.empty()
+
+        with col2:
+            st.image(componentev2)
+
+        with col3:
+            st.empty()
+
     st.write(
         """
         Cuando se descomprima el documento dejara una carpeta llamada “Componente_v2”, la cual al abrirla nos permitirá ver todos los archivos que componen el programa de reconocimiento, de los cuales el que nos permitirá ejecutar el programa sera el archivo llamado “Componente_v2.exe” el cual tiene por icono un pingüino para una referencia más clara.
         """)
+    
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.empty()
+
+        with col2:
+            st.image(archivo_exe)
+
+        with col3:
+            st.empty()
 
 #st.image(descarga_img)
 
