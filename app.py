@@ -25,7 +25,7 @@ imagen_1 = Image.open("Imagenes/recorte_1.png")
 imagen_2 = Image.open("Imagenes/recorte_2.png")
 imagen_5 = Image.open("Imagenes/recorte_5.png")
 grafica_img = Image.open("Imagenes/Grafica.png")
-instrucciones_img = Image.open("Imagenes/instrucciones.png")
+instrucciones_img = Image.open("Imagenes/Instrucciones.png")
 #Imagenes de la guia de instalcion
 descarga_img = Image.open("Imagenes/descarga.PNG")
 componentev2 = Image.open("Imagenes/componente_v2.PNG")
