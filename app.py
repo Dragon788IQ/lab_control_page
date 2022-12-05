@@ -24,8 +24,8 @@ laptop_animation_url = "https://assets8.lottiefiles.com/packages/lf20_w51pcehl.j
 imagen_1 = Image.open("Imagenes/recorte_1.png")
 imagen_2 = Image.open("Imagenes/recorte_2.png")
 imagen_5 = Image.open("Imagenes/recorte_5.png")
-grafica_img = Image.open("imagenes/Grafica.png")
-instrucciones_img = Image.open("imagenes/instrucciones.png")
+grafica_img = Image.open("Imagenes/Grafica.png")
+instrucciones_img = Image.open("Imagenes/instrucciones.png")
 #Imagenes de la guia de instalcion
 descarga_img = Image.open("Imagenes/descarga.PNG")
 componentev2 = Image.open("Imagenes/componente_v2.PNG")
