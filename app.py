@@ -43,6 +43,10 @@ with st.container():
         "Este programa esta diseñado para apoyar a los alumnos y docentes en el registro de informacion procedente de paneles, Esto con ayuda de reconociemiento en tiempo real, graficacion de la informacion y posterior registro en un documento de excel."
     )
     st.write("[Informacion de referencia >](https://github.com/JaidedAI/EasyOCR)")
+    st.write("[Repositorio de Git del programa >](https://github.com/Dragon788IQ/Programa_reconocimiento_de_paneles)")
+    st.write("[Repositorio de Gti de la pagina >](https://github.com/Dragon788IQ/lab_control_page)")
+
+
 
 
 with st.container():
